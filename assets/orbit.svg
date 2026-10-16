@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <radialGradient id="halo"><stop stop-color="#6DF5CA" stop-opacity=".16"/><stop offset="1" stop-color="#6DF5CA" stop-opacity="0"/></radialGradient>
+    <radialGradient id="sphere" cx=".28" cy=".23" r=".83"><stop stop-color="#ADFFDD"/><stop offset=".23" stop-color="#67DDBA"/><stop offset=".56" stop-color="#1C7E67"/><stop offset=".81" stop-color="#0D3C34"/><stop offset="1" stop-color="#071713"/></radialGradient>
+    <radialGradient id="gloss" cx=".24" cy=".18" r=".72"><stop stop-color="#E7FFF1" stop-opacity=".4"/><stop offset=".5" stop-color="#86F7C8" stop-opacity=".07"/><stop offset="1" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ring" x1="83" y1="384" x2="520" y2="210" gradientUnits="userSpaceOnUse"><stop stop-color="#78C4A5" stop-opacity=".05"/><stop offset=".28" stop-color="#78C4A5" stop-opacity=".6"/><stop offset=".72" stop-color="#C3FFE2" stop-opacity=".85"/><stop offset="1" stop-color="#78C4A5" stop-opacity=".05"/></linearGradient>
+    <linearGradient id="axis" x1="200" y1="125" x2="400" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#C4FFE4" stop-opacity=".1"/><stop offset=".5" stop-color="#A7FAD3" stop-opacity=".7"/><stop offset="1" stop-color="#8BD2B2" stop-opacity=".1"/></linearGradient>
+    <clipPath id="clip"><circle cx="300" cy="290" r="124"/></clipPath>
+    <filter id="glow"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <circle cx="300" cy="290" r="244" fill="url(#halo)"/>
+  <circle cx="300" cy="290" r="212" stroke="#4B7A65" stroke-opacity=".18" stroke-dasharray="2 9"/>
+  <circle cx="300" cy="290" r="172" stroke="#6BA385" stroke-opacity=".17"/>
+  <path d="M300 62v26m0 404v26M72 290h26m404 0h26" stroke="#619C7E" stroke-opacity=".28"/>
+  <ellipse cx="300" cy="290" rx="237" ry="76" transform="rotate(-29 300 290)" stroke="#87D2AE" stroke-opacity=".18"/>
+  <ellipse cx="300" cy="290" rx="202" ry="62" transform="rotate(59 300 290)" stroke="url(#axis)" stroke-opacity=".75"/>
+  <circle cx="300" cy="290" r="125" stroke="#87E5BA" stroke-opacity=".3"/>
+  <circle cx="300" cy="290" r="124" fill="url(#sphere)"/>
+  <g clip-path="url(#clip)" stroke="#CDFCE1" stroke-width=".65" stroke-opacity=".23" transform="rotate(-22 300 290)">
+    <ellipse cx="300" cy="290" rx="31" ry="124"/>
+    <ellipse cx="300" cy="290" rx="65" ry="124"/>
+    <ellipse cx="300" cy="290" rx="97" ry="124"/>
+    <path d="M176 290h248M300 166v248"/>
+    <ellipse cx="300" cy="249" rx="121" ry="21"/>
+    <ellipse cx="300" cy="209" rx="100" ry="15"/>
+    <ellipse cx="300" cy="331" rx="121" ry="21"/>
+    <ellipse cx="300" cy="371" rx="100" ry="15"/>
+  </g>
+  <circle cx="300" cy="290" r="124" fill="url(#gloss)"/>
+  <path d="M92 386C78 356 163 293 282 227s224-93 237-63" stroke="url(#ring)" stroke-width="1.1"/>
+  <path d="M519 164c14 30-71 93-190 159S105 416 92 386" stroke="url(#ring)" stroke-width="1.6"/>
+  <path d="M519 164c14 30-71 93-190 159S105 416 92 386" stroke="#8EF0CB" stroke-width="3" stroke-opacity=".3" filter="url(#glow)"/>
+  <circle cx="491" cy="234" r="6" fill="#B7FFDE"/>
+  <circle cx="491" cy="234" r="13" stroke="#8FEBC3" stroke-opacity=".35"/>
+  <circle cx="491" cy="234" r="8" fill="#B7FFDE" fill-opacity=".4" filter="url(#glow)"/>
+  <circle cx="180" cy="132" r="3" fill="#9EEEC6" fill-opacity=".7"/>
+  <circle cx="147" cy="407" r="3.5" fill="#A9F5D0"/>
+  <path d="M435 119v10m-5-5h10M117 243v8m-4-4h8M401 450v8m-4-4h8" stroke="#9EEEC6" stroke-opacity=".5"/>
+  <path d="M250 291h22l15-25 25 49 14-25h25" stroke="#C9FFE6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".8"/>
+  <circle cx="300" cy="290" r="46" stroke="#CEFFE8" stroke-opacity=".19" stroke-dasharray="2 4"/>
+</svg>
