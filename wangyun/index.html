@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070e20">
+  <meta name="description" content="王允的个人网站。一名工科大学生，爱好文学和科技。在理性与感性之间，保持好奇。">
+  <title>王允 · 在理性与感性之间</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="atmosphere" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="王允，返回首页"><span class="mark" aria-hidden="true">✦</span> 王允<span class="wordmark-latin">WANG YUN</span></a>
+    <nav aria-label="主导航">
+      <a href="#about">关于我</a>
+      <a href="#interests">兴趣坐标</a>
+    </nav>
+    <button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false" hidden><span class="motion-icon" aria-hidden="true"></span><span class="motion-label">开启星空动效</span></button>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star" aria-hidden="true"></span> 一名工科大学生的个人宇宙</p>
+        <h1 id="hero-title">你好，我是<span class="name">王允<span class="name-dot">。</span></span></h1>
+        <p class="hero-statement">以理性探索，<br>以文字感知。</p>
+        <p class="hero-description">一名工科大学生，爱好文学和科技。<br>在公式与字句之间，保持对世界的好奇。</p>
+        <a class="primary-link" href="#about">认识我 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="cosmos" aria-hidden="true">
+        <svg class="orbit-art" viewBox="0 0 600 600" fill="none">
+          <defs>
+            <radialGradient id="planet"><stop stop-color="#182e54"/><stop offset=".72" stop-color="#0d1a33"/><stop offset="1" stop-color="#0a152a"/></radialGradient>
+            <linearGradient id="rim" x1="180" y1="160" x2="410" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#bad7ef" stop-opacity=".7"/><stop offset=".45" stop-color="#477ca4" stop-opacity=".12"/><stop offset="1" stop-color="#477ca4" stop-opacity=".02"/></linearGradient>
+            <radialGradient id="halo"><stop stop-color="#4a83b0" stop-opacity=".17"/><stop offset="1" stop-color="#4a83b0" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle cx="300" cy="300" r="272" fill="url(#halo)"/>
+          <circle cx="300" cy="300" r="239" stroke="#8aaccb" stroke-opacity=".14" stroke-dasharray="2 9"/>
+          <circle cx="300" cy="300" r="189" stroke="#8aaccb" stroke-opacity=".15"/>
+          <path d="M300 34V66M300 534V566M34 300H66M534 300H566" stroke="#8aaccb" stroke-opacity=".38"/>
+          <circle cx="300" cy="300" r="127" fill="url(#planet)" stroke="url(#rim)"/>
+          <ellipse cx="300" cy="300" rx="272" ry="82" transform="rotate(-34 300 300)" stroke="#9ec4e1" stroke-opacity=".38"/>
+          <ellipse cx="300" cy="300" rx="218" ry="64" transform="rotate(38 300 300)" stroke="#9ec4e1" stroke-opacity=".13"/>
+          <g class="orbital-traveler"><circle cx="300" cy="111" r="4" fill="#d4e8f9"/><circle cx="300" cy="111" r="10" stroke="#c8e4f9" stroke-opacity=".15"/></g>
+          <circle cx="102" cy="439" r="3" fill="#d7b77e"/>
+          <path d="M444 112V128M436 120H452" stroke="#c1d9ed"/>
+          <circle cx="300" cy="300" r="3" fill="#a4c7e1"/>
+        </svg>
+        <span class="orbit-caption caption-top">理性 · REASON</span>
+        <span class="orbit-caption caption-bottom">感性 · SENSIBILITY</span>
+        <span class="cosmos-footnote">两种视角，同一个世界</span>
+      </div>
+      <div class="hero-bottom"><span>文学 / 科技 / 好奇心</span><a href="#about">向下探索 <span aria-hidden="true">↓</span></a><span class="hero-index">01 — 03</span></div>
+    </section>
+
+    <section id="about" class="about section" aria-labelledby="about-title">
+      <div class="section-label"><span>01 / 关于我</span><span class="label-line"></span></div>
+      <div class="about-content">
+        <h2 id="about-title">在理性与感性之间，<br><span>寻找自己的坐标。</span></h2>
+        <div class="about-text"><p>我是王允，一名工科大学生。</p><p>科技与文学，是我感兴趣的两个方向。一个帮助我理解世界如何运转，一个让我感受生活中的细节与回响。</p><p>这里是我的一小片星空，也是与你相遇的地方。</p><div class="identity-tags"><span>工科大学生</span><span>文学爱好者</span><span>科技爱好者</span></div></div>
+      </div>
+    </section>
+
+    <section id="interests" class="interests section" aria-labelledby="interests-title">
+      <div class="section-label"><span>02 / 兴趣坐标</span><span class="label-line"></span></div>
+      <div class="section-heading"><h2 id="interests-title">我的世界，不止一面。</h2><p>向外探索，也向内感受。</p></div>
+      <div class="interest-grid">
+        <article class="interest literature"><div class="interest-top"><span class="interest-number">01</span><svg viewBox="0 0 64 64" aria-hidden="true" fill="none"><path d="M32 16C24 10 14 10 6 12V49C15 46 24 47 32 53C40 47 49 46 58 49V12C50 10 40 10 32 16ZM32 16V53"/><path d="M13 22C17 21 23 22 26 24M13 30C17 29 23 30 26 32M38 24C42 22 47 21 51 22M38 32C42 30 47 29 51 30"/></svg></div><p class="interest-en">LITERATURE</p><h3>文学<span>在文字里，看见生活。</span></h3><p class="interest-description">喜欢文学，也喜欢文字带来的另一种视角。让目光停留在日常之中，感受语言与故事的力量。</p><div class="interest-bottom"><span>文字</span><span>故事</span><span>感受</span><span class="four-point" aria-hidden="true">✧</span></div></article>
+        <article class="interest technology"><div class="interest-top"><span class="interest-number">02</span><svg viewBox="0 0 64 64" aria-hidden="true" fill="none"><circle cx="32" cy="32" r="6"/><ellipse cx="32" cy="32" rx="27" ry="11" transform="rotate(-35 32 32)"/><ellipse cx="32" cy="32" rx="27" ry="11" transform="rotate(35 32 32)"/><circle cx="32" cy="32" r="26" stroke-dasharray="2 5"/></svg></div><p class="interest-en">TECHNOLOGY</p><h3>科技<span>在问题里，发现可能。</span></h3><p class="interest-description">作为一名工科大学生，我对科技抱有好奇。关注想法如何成为现实，也享受理解原理、探索未知的过程。</p><div class="interest-bottom"><span>原理</span><span>探索</span><span>创造</span><span class="four-point" aria-hidden="true">✧</span></div></article>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title"><span class="closing-star" aria-hidden="true">✦</span><p class="eyebrow">保持好奇，继续探索</p><h2 id="closing-title">世界很大，<br class="mobile-break">慢慢认识。</h2><p>很高兴，你来过我的小小宇宙。</p></section>
+  </main>
+  <footer class="site-footer"><a class="footer-name" href="#home">王允 <span>WANG YUN</span></a><span>文学与科技，在此相遇。</span><a href="#home">回到星空 <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
