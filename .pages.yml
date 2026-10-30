@@ -1,0 +1,80 @@
+media:
+  input: wangyun/media
+  output: /wangyun/media
+  extensions: [jpg, jpeg, png, webp, gif, avif]
+  rename: random
+
+content:
+  - name: articles
+    label: 文章管理
+    type: file
+    path: wangyun/content/posts.json
+    format: json
+    fields:
+      - name: entries
+        label: 我的文章
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: id
+            label: 文章链接标识
+            type: uuid
+            required: true
+            description: 自动生成，无需修改。修改标题不会改变文章链接。
+            options:
+              editable: false
+              generate: false
+          - name: title
+            label: 标题
+            type: string
+            required: true
+          - name: date
+            label: 日期
+            type: date
+            required: true
+            options:
+              format: yyyy-MM-dd
+          - name: summary
+            label: 摘要
+            type: text
+            description: 可选；留空时从正文自动提取。
+          - name: cover
+            label: 封面图片
+            type: image
+            description: 可选；建议上传压缩后的图片。
+          - name: body
+            label: 正文
+            type: rich-text
+            required: true
+            options:
+              format: html
+              switcher: false
+              extensions: [jpg, jpeg, png, webp, gif, avif]
+              rename: random
+
+  - name: gallery
+    label: 相册管理
+    type: file
+    path: wangyun/content/gallery.json
+    format: json
+    fields:
+      - name: entries
+        label: 我的图片
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{caption}"
+        fields:
+          - name: image
+            label: 图片
+            type: image
+            required: true
+          - name: caption
+            label: 图片说明
+            type: string
+            required: true
+            description: 简单描述画面内容，也方便无法看见图片的读者。

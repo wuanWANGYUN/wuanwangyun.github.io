@@ -8,7 +8,9 @@
   <title>王允 · 在理性与感性之间</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./content.css">
   <script src="./script.js" defer></script>
+  <script src="./content.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
@@ -20,6 +22,8 @@
     <nav aria-label="主导航">
       <a href="#about">关于我</a>
       <a href="#interests">兴趣坐标</a>
+      <a href="#writing">文章</a>
+      <a href="#gallery">相册</a>
     </nav>
     <button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false" hidden><span class="motion-icon" aria-hidden="true"></span><span class="motion-label">开启星空动效</span></button>
   </header>
@@ -76,8 +80,25 @@
       </div>
     </section>
 
+    <section id="writing" class="section" aria-labelledby="writing-title">
+      <div class="section-label"><span>03 / 文字与思考</span><span class="label-line"></span></div>
+      <div class="section-heading"><h2 id="writing-title">把想法，写成星光。</h2><a class="text-link" href="./article.html">全部文章 <span aria-hidden="true">↗</span></a></div>
+      <div id="posts-list" class="post-grid" data-posts data-limit="3" aria-live="polite"><p class="loading-state">正在翻开文章……</p></div>
+      <noscript><p>文章列表需要启用 JavaScript 后查看。</p></noscript>
+    </section>
+    <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <div class="section-label"><span>04 / 光影收藏</span><span class="label-line"></span></div>
+      <div class="section-heading"><h2 id="gallery-title">留住眼前的片刻。</h2><p>图片与生活的注脚。</p></div>
+      <div id="gallery-grid" class="gallery-grid" aria-live="polite"><p class="loading-state">正在展开相册……</p></div>
+      <noscript><p>相册需要启用 JavaScript 后查看。</p></noscript>
+    </section>
+    <dialog id="photo-dialog" aria-labelledby="photo-caption">
+      <div class="photo-toolbar"><span id="photo-count"></span><button type="button" id="photo-close" autofocus>关闭 <span aria-hidden="true">×</span></button></div>
+      <img id="photo-full" alt="">
+      <div class="photo-controls"><button type="button" id="photo-prev" aria-label="上一张图片">←</button><p id="photo-caption"></p><button type="button" id="photo-next" aria-label="下一张图片">→</button></div>
+    </dialog>
     <section class="closing" aria-labelledby="closing-title"><span class="closing-star" aria-hidden="true">✦</span><p class="eyebrow">保持好奇，继续探索</p><h2 id="closing-title">世界很大，<br class="mobile-break">慢慢认识。</h2><p>很高兴，你来过我的小小宇宙。</p></section>
   </main>
-  <footer class="site-footer"><a class="footer-name" href="#home">王允 <span>WANG YUN</span></a><span>文学与科技，在此相遇。</span><a href="#home">回到星空 <span aria-hidden="true">↑</span></a></footer>
+  <footer class="site-footer"><a class="footer-name" href="#home">王允 <span>WANG YUN</span></a><span>文学与科技，在此相遇。</span><a href="./admin.html">内容管理</a><a href="#home">回到星空 <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
